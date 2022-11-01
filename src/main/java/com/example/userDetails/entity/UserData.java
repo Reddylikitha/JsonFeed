@@ -9,7 +9,7 @@ public class UserData {
 	
 	@Id
 	private int userId;
-	private int it;
+	private int id;
 	private String title;
 	private String body;
 	
@@ -18,10 +18,10 @@ public class UserData {
 	}
 	
 	
-	public UserData(int userId,int it,String title,String body) {
+	public UserData(int userId,int id,String title,String body) {
 		
 		this.setUserId(userId);
-		this.setIt(it);
+		this.setId(id);
 		this.setTitle(title);
 		this.setBody(body);
 	}
@@ -31,11 +31,11 @@ public class UserData {
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
-	public int getIt() {
-		return it;
+	public int getId() {
+		return id;
 	}
-	public void setIt(int it) {
-		this.it = it;
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getTitle() {
 		return title;

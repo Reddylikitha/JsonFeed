@@ -52,7 +52,7 @@ class UserDataTest {
 	public void testUpdatedData() throws JsonMappingException, JsonProcessingException{
 		
 		String reqBody = "{\"userId\":7,\"body\":\"Likitha\"}";
-		String resBody = "[{\"userId\":7,\"it\":61,\"title\":\"title\",\"body\":\"Likitha\"}]";
+		String resBody = "[{\"userId\":7,\"id\":61,\"title\":\"title\",\"body\":\"Likitha\"}]";
 		
 		UserData feedDetails = object.readValue(reqBody, UserData.class);
 		UserData[] user = new UserData[1];
